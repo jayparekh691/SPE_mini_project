@@ -1,2 +1,1 @@
-[trial]
 172.16.139.245 ansible_connection=ssh ansible_user=jay ansible_sudo_pass=rock123@A
