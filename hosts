@@ -1,3 +1,2 @@
 [trial]
 172.16.139.245 ansible_connection=ssh ansible_user=jay ansible_sudo_pass=rock123@A
-172.16.128.35 ansible_connection=ssh ansible_user=gaurav ansible_sudo_pass=gaurav1807
