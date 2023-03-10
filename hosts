@@ -1,1 +1,1 @@
-172.18.0.1 ansible_ssh_pass=rock123@A ansible_ssh_user=jay
+172.16.139.245 ansible_ssh_pass=rock123@A ansible_ssh_user=jay
