@@ -1,2 +1,2 @@
-172.16.139.245 ansible_user=jay
-172.16.132.90 ansible_user=tushar
+172.16.139.245 ansible_user=jay ansible_pass=rock123@A
+172.16.132.90 ansible_user=tushar ansible_pass=tushar
