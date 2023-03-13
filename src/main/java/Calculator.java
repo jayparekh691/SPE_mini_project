@@ -33,6 +33,7 @@ public class Calculator {
     }
     public static void main(String[] args) {
         Calculator c = new Calculator();
+        Scanner sc = new Scanner(System.in);
         while(true) {
             System.out.println("Chose operation to perform :");
             System.out.println("1. Square Root function ");
@@ -40,7 +41,6 @@ public class Calculator {
             System.out.println("3. Natural Logarithm ");
             System.out.println("4. Power function ");
             System.out.println("Anything else to exit");
-            Scanner sc = new Scanner(System.in);
             int choice;
             choice = sc.nextInt();
             switch (choice) {
