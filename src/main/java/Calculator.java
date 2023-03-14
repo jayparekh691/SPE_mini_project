@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -43,11 +44,11 @@ public class Calculator {
             System.out.println("Anything else to exit");
             int choice;
             try {
-                choice = scanner.nextInt();
+                choice = sc.nextInt();
             }
             catch (InputMismatchException error) {
                 System.out.println("Exiting....");
-                scanner.close();
+                sc.close();
                 return;
             }
             switch (choice) {
