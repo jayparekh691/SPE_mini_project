@@ -35,7 +35,8 @@ public class Calculator {
     public static void main(String[] args) {
         Calculator c = new Calculator();
         Scanner sc = new Scanner(System.in);
-        while(true) {
+        int flag=1;
+        while(flag==1) {
             System.out.println("Chose operation to perform :");
             System.out.println("1. Square Root function ");
             System.out.println("2. Find factorial ");
@@ -91,8 +92,9 @@ public class Calculator {
                     break;
                 }
                 default:
-                    return;
+                    flag=0;
             }
         }
+        sc.close();
     }
 }
