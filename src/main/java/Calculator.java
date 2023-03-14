@@ -41,7 +41,7 @@ public class Calculator {
             System.out.println("2. Find factorial ");
             System.out.println("3. Natural Logarithm ");
             System.out.println("4. Power function ");
-            System.out.println("Anything else to exit");
+            System.out.print("Anything else to exit");
             int choice=1;
             while(sc.hasNextInt()){
                 choice = sc.nextInt();
