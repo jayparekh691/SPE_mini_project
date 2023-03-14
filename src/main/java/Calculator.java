@@ -47,6 +47,7 @@ public class Calculator {
             while(sc.hasNextInt()){
                 choice = sc.nextInt();
             }
+            sc.nextLine();
             switch (choice) {
                 case 1: {
                     System.out.println("Enter a positive number to find Square root : ");
