@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -43,11 +42,10 @@ public class Calculator {
             System.out.println("3. Natural Logarithm ");
             System.out.println("4. Power function ");
             System.out.println("Anything else to exit");
-            int choice=5;
+            int choice=1;
             while(sc.hasNextInt()){
                 choice = sc.nextInt();
             }
-            sc.nextLine();
             switch (choice) {
                 case 1: {
                     System.out.println("Enter a positive number to find Square root : ");
