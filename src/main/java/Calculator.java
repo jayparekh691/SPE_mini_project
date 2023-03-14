@@ -36,12 +36,12 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
         int flag=1;
         while(flag==1) {
-            System.out.print("Chose operation to perform :\n");
-            System.out.print("1. Square Root function \n");
-            System.out.print("2. Find factorial \n");
-            System.out.print("3. Natural Logarithm \n");
-            System.out.print("4. Power function \n");
-            System.out.print("Anything else to exit \n");
+            System.out.print("Chose operation to perform :");
+            System.out.print("1. Square Root function ");
+            System.out.print("2. Find factorial ");
+            System.out.print("3. Natural Logarithm ");
+            System.out.print("4. Power function ");
+            System.out.print("Anything else to exit ");
             int choice;
             choice = sc.nextInt();
             switch (choice) {
