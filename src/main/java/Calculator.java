@@ -35,13 +35,15 @@ public class Calculator {
         Calculator c = new Calculator();
         Scanner sc = new Scanner(System.in);
         int flag=1;
+        System.out.println("Press anything to enter application");
+        sc.nextLine();
         while(flag==1) {
-            System.out.print("Chose operation to perform :");
-            System.out.print("1. Square Root function ");
-            System.out.print("2. Find factorial ");
-            System.out.print("3. Natural Logarithm ");
-            System.out.print("4. Power function ");
-            System.out.print("Anything else to exit ");
+            System.out.println("Chose operation to perform :");
+            System.out.println("1. Square Root function ");
+            System.out.println("2. Find factorial ");
+            System.out.println("3. Natural Logarithm ");
+            System.out.println("4. Power function ");
+            System.out.println("Anything else to exit");
             int choice;
             choice = sc.nextInt();
             switch (choice) {
