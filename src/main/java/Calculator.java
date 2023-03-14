@@ -43,14 +43,9 @@ public class Calculator {
             System.out.println("3. Natural Logarithm ");
             System.out.println("4. Power function ");
             System.out.println("Anything else to exit");
-            int choice;
-            try {
+            int choice=5;
+            while(sc.hasNextInt()){
                 choice = sc.nextInt();
-            }
-            catch (InputMismatchException error) {
-                System.out.println("Exiting....");
-                sc.close();
-                return;
             }
             switch (choice) {
                 case 1: {
