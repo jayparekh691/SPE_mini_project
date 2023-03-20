@@ -1,21 +1,11 @@
 ---
 - name: Deploy Docker Image to Container
-  hosts: localhost
+  hosts: all
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
     - name: Pull Docker Image
       shell: docker pull jayparekhiiitb/spe_mini_project:latest
-#      docker_image:
-#        name: jayparekhiiitb/spe_mini_project
-#        tag: latest
-#        source: pull
 
     - name: Create & Start Calculator Docker Container
       shell: docker run -it -d jayparekhiiitb/spe_mini_project
-#      docker_container:
-#        name: SPE_mini_project
-#        image: jayparekhiiitb/spe_mini_project
-#        state: started
-#        tty: yes
-#        interactive: yes
