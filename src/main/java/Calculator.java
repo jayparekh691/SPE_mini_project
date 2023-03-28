@@ -52,8 +52,8 @@ public class Calculator {
                     double num;
                     num = sc.nextDouble();
                     if (num <= 0) {
-                        System.out.println("Please enter a positive number");
-                        logger.warn("Negative number not allowed");
+//                        System.out.println("Please enter a positive number");
+                        logger.warn("Negative number not allowed "+num);
                     }else
                         System.out.println(c.sqRoot(num));
                     break;
@@ -63,8 +63,8 @@ public class Calculator {
                     long num;
                     num = sc.nextLong();
                     if (num <= 0){
-                        System.out.println("Please enter a positive number");
-                        logger.warn("Negative number not allowed");
+//                        System.out.println("Please enter a positive number");
+                        logger.warn("Negative number not allowed "+num);
                     }
                     else
                         System.out.println(c.fact(num));
@@ -75,8 +75,8 @@ public class Calculator {
                     double num;
                     num = sc.nextDouble();
                     if (num <= 0){
-                        System.out.println("Natural log for negative number is Undefined");
-                        logger.warn("Natural log of negative number is Undefined");
+//                        System.out.println("Natural log for negative number is Undefined");
+                        logger.warn("Natural log of negative number is Undefined "+num);
                     }
                     else
                         System.out.println(c.naturalLog(num));
