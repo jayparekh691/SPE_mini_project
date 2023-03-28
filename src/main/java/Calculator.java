@@ -66,6 +66,9 @@ public class Calculator {
 //                        System.out.println("Please enter a positive number");
                         logger.warn("Negative number not allowed "+num);
                     }
+                    else if(num>=20){
+                        logger.warn("Number greater that 19 is out of bound "+num);
+                    }
                     else
                         System.out.println(c.fact(num));
                     break;
