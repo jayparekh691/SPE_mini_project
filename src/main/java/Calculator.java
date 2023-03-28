@@ -51,9 +51,10 @@ public class Calculator {
                     System.out.println("Enter a positive number to find Square root : ");
                     double num;
                     num = sc.nextDouble();
-                    if (num <= 0)
+                    if (num <= 0) {
                         System.out.println("Please enter a positive number");
-                    else
+                        logger.warn("Negative number not allowed");
+                    }else
                         System.out.println(c.sqRoot(num));
                     break;
                 }
@@ -61,18 +62,22 @@ public class Calculator {
                     System.out.println("Enter a positive number to find factorial: ");
                     long num;
                     num = sc.nextLong();
-                    if (num <= 0)
+                    if (num <= 0){
                         System.out.println("Please enter a positive number");
+                        logger.warn("Negative number not allowed");
+                    }
                     else
                         System.out.println(c.fact(num));
                     break;
                 }
-                case 3:{
+                case 3: {
                     System.out.println("Enter a positive number to find Natural Log : ");
                     double num;
                     num = sc.nextDouble();
-                    if(num<=0)
+                    if (num <= 0){
                         System.out.println("Natural log for negative number is Undefined");
+                        logger.warn("Natural log of negative number is Undefined");
+                    }
                     else
                         System.out.println(c.naturalLog(num));
                     break;
